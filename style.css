@@ -1,0 +1,175 @@
+:root {
+  --additional-color: #ffd23f;
+  --secondary-color: #ee4266;
+  --basic-color: #540d6e;
+  --subordinate-color-1: #0ead69;
+  --subordinate-color-2: #3bceac;
+  --main-color-1: #ffffff;
+  --main-color-2: #000000;
+  --normal-text-font: 'Roboto', sans-serif;
+  --slides-text-font: 'Oswald', sans-serif;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid green; */
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  font-family: var(--normal-text-font);
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.all-content {
+  display: grid;
+  grid-template-columns: 0 1fr; /* Sidebar hidden by default */
+  gap: 10px;
+  transition: grid-template-columns 0.8s ease; /* Smooth transition */
+}
+
+.sidebar {
+  background-color: #ee4266;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 7rem;
+  transform: translateX(-400%);
+  transition: transform 0.6s ease-in-out;
+}
+.sidebar.open {
+  transform: translateX(0%);
+}
+.all-content.sidebar-open {
+  grid-template-columns: 30% 1fr; /* Sidebar takes 250px when open */
+}
+#openMenu {
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  display: block;
+}
+#openMenu img {
+  width: 30px;
+}
+
+.sidebar button {
+  border: none;
+  background-color: transparent;
+  width: 30px;
+}
+
+.sidebar img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+  padding: 0;
+}
+.sidebar a {
+  background-color: var(--additional-color);
+  width: 100%;
+  display: block;
+  padding: 20px;
+  font-size: 24px;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.card-container {
+  margin-top: 3rem;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dynamic card grid */
+  gap: 10px;
+  /* place-items: center; */
+  align-content: start;
+}
+
+.card {
+  cursor: pointer;
+  background-color: var(--subordinate-color-2);
+  padding: 10px;
+   max-width: 100%; /* Adjust for flexible width */
+  /* max-height: 170px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 10px; */
+}
+.card-title {
+  
+}
