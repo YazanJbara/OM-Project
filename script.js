@@ -21,3 +21,37 @@ function closeSideBar() {
 
 openMenu.addEventListener('click', openSideBar);
 closeMenu.addEventListener('click', closeSideBar);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+  const modals = document.querySelectorAll('.modal');
+  const modalOverlay = document.createElement('div');
+  modalOverlay.classList.add('modal-overlay');
+  document.body.appendChild(modalOverlay);
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const modalId = card.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'block';
+        modalOverlay.style.display = 'block';
+      }
+    });
+  });
+
+  modals.forEach((modal) => {
+    const closeBtn = modal.querySelector('.close');
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+      modalOverlay.style.display = 'none';
+    });
+  });
+
+  modalOverlay.addEventListener('click', () => {
+    modals.forEach((modal) => {
+      modal.style.display = 'none';
+    });
+    modalOverlay.style.display = 'none';
+  });
+});

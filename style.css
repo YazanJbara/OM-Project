@@ -10,6 +10,7 @@
   --slides-text-font: 'Oswald', sans-serif;
 }
 
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -154,9 +155,8 @@ h6 {
   margin-top: 3rem;
   padding: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Dynamic card grid */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 10px;
-  /* place-items: center; */
   align-content: start;
 }
 
@@ -164,12 +164,67 @@ h6 {
   cursor: pointer;
   background-color: var(--subordinate-color-2);
   padding: 10px;
-   max-width: 100%; /* Adjust for flexible width */
-  /* max-height: 170px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: 10px; */
+  max-width: 100%; 
 }
 .card-title {
   
+}
+
+
+/* modals */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.modal-content {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 33px;
+    color: #000;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.profile {
+  width: 30px;
+}
+
+.member-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.member-controls {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

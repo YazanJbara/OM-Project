@@ -15,20 +15,16 @@
   </head>
   <body>
     <div class="all-content">
-       <button
-          id="openMenu"
-          aria-expanded="false"
-          aria-label="open navigation menu"
-        >
-          <img class="open-icon" src="Icons/hamburger.svg" alt="close-menu" />
-        </button>
+      <button
+        id="openMenu"
+        aria-expanded="false"
+        aria-label="open navigation menu"
+      >
+        <img class="open-icon" src="Icons/hamburger.svg" alt="close-menu" />
+      </button>
       <div class="sidebar">
         <button id="closeMenu" aria-label="close navigation menu">
-          <img
-            class="close-icon"
-            src="Icons/close.svg"
-            alt="close-menu"
-          />
+          <img class="close-icon" src="Icons/close.svg" alt="close-menu" />
         </button>
         <ul class="sidebar-links">
           <li><a href="index.html">Main</a></li>
@@ -37,7 +33,7 @@
         </ul>
       </div>
       <div class="card-container">
-        <div class="card">
+        <div class="card" data-modal="modal-1">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -46,7 +42,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-2">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -55,7 +51,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-3">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -64,7 +60,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-4">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -73,7 +69,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-5">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -82,7 +78,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-6">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -91,7 +87,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-7">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -100,7 +96,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-8">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -109,7 +105,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-9">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -118,7 +114,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-10">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -127,7 +123,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-11">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -136,7 +132,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-12">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -145,7 +141,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-13">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -154,7 +150,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-14">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -163,7 +159,7 @@
             eum
           </p>
         </div>
-        <div class="card">
+        <div class="card" data-modal="modal-15">
           <h3 class="card-title">Headline</h3>
           <p class="card-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -174,5 +170,255 @@
         </div>
       </div>
     </div>
+    <div class="modal" id="modal-1">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 1</h3>
+        <p>Content for Modal 1</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 1</p>
+          </div>
+          <audio controls id="audio-1" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-2">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          quam optio unde explicabo excepturi eum earum distinctio ipsam,
+          dolorem provident dolores, eaque nobis officia quibusdam qui rem
+          reprehenderit consequatur iure?Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Fugiat at modi quis necessitatibus placeat, tempora
+          optio ea accusamus quisquam fugit eaque doloribus perspiciatis quam
+          non! Temporibus sunt quam reiciendis inventore!
+        </p>
+      </div>
+      <div class="member-content" >
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Yazan Jbara</p>
+          </div>
+          <audio controls id="audio-2" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-3">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 3</h3>
+        <p>Content for Modal 3</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 3</p>
+          </div>
+          <audio controls id="audio-3" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-4">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 4</h3>
+        <p>Content for Modal 4</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 4</p>
+          </div>
+          <audio controls id="audio-4" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-5">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 5</h3>
+        <p>Content for Modal 5</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 5</p>
+          </div>
+          <audio controls id="audio-5" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-6">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 6</h3>
+        <p>Content for Modal 6</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 6</p>
+          </div>
+          <audio controls id="audio-6" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-7">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 7</h3>
+        <p>Content for Modal 7</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 7</p>
+          </div>
+          <audio controls id="audio-7" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-8">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 8</h3>
+        <p>Content for Modal 8</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 8</p>
+          </div>
+          <audio controls id="audio-8" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-9">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 9</h3>
+        <p>Content for Modal 9</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 9</p>
+          </div>
+          <audio controls id="audio-9" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-10">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 10</h3>
+        <p>Content for Modal 10</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 10</p>
+          </div>
+          <audio controls id="audio-10" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-11">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 11</h3>
+        <p>Content for Modal 11</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 11</p>
+          </div>
+          <audio controls id="audio-11" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-12">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 12</h3>
+        <p>Content for Modal 12</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 12</p>
+          </div>
+          <audio controls id="audio-12" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-13">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 13</h3>
+        <p>Content for Modal 13</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 13</p>
+          </div>
+          <audio controls id="audio-13" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-14">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 14</h3>
+        <p>Content for Modal 14</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 14</p>
+          </div>
+          <audio controls id="audio-14" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-15">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Modal Title 15</h3>
+        <p>Content for Modal 15</p>
+      </div>
+      <div class="member-content">
+        <div class="member-controls">
+          <div class="member-info">
+            <img class="profile" src="Icons/profile.svg" alt="">
+            <p class="member">Member 15</p>
+          </div>
+          <audio controls id="audio-15" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3"></audio>
+        </div>
+      </div>
+    </div>
+
+    
   </body>
 </html>
